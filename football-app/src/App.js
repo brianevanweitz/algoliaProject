@@ -39,6 +39,7 @@ class App extends Component {
               <Configure hitsPerPage={12} />
             </div>
             <div className="search-panel">
+              <h3 className='search-title'>Search for a player by name:</h3>
               <div className="search-panel__results">
                 <SearchBox
                   className="searchbox"

@@ -20,7 +20,7 @@ em {
 }
 
 .header-title {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: normal;
   padding-right: 2%;
 }
@@ -44,9 +44,15 @@ em {
 
 .search-panel {
   display: flex;
+  flex-direction: column;
   max-width: 85%;
   min-width: 85%;
   margin-right: -5%;
+}
+
+.search-title {
+  text-align: center;
+  margin-top: 0;
 }
 
 .search-panel__filters {
