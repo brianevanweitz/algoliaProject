@@ -6,6 +6,9 @@ import {
   SearchBox,
   Pagination,
   Highlight,
+  ClearRefinements,
+  RefinementList,
+  Configure,
 } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import './App.css';
@@ -21,7 +24,7 @@ class App extends Component {
       <div>
         <header className="header">
           <h1 className="header-title">
-            <a href="/">football-app</a>
+            <a href="/">NFL Player Statistics</a>
           </h1>
           <p className="header-subtitle">
             using{' '}
@@ -30,9 +33,13 @@ class App extends Component {
             </a>
           </p>
         </header>
-
         <div className="container">
           <InstantSearch searchClient={searchClient} indexName="Football">
+            <div className="left-panel">
+              <ClearRefinements />
+              <h2>Filter By Position</h2>
+              <RefinementList attribute="position" />
+            </div>
             <div className="search-panel">
               <div className="search-panel__results">
                 <SearchBox
@@ -57,11 +64,16 @@ class App extends Component {
 
 function Hit(props) {
   return (
-    <article>
-      <h1>
+    <div className='player-card'>
+      <div className='player-position'>
+        <h1>
+          {props.hit.position}
+        </h1>
+      </div>
+      <h3>
         <Highlight attribute="name" hit={props.hit} />
-      </h1>
-    </article>
+      </h3>
+    </div>
   );
 }
 
