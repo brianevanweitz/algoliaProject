@@ -6,9 +6,10 @@ em {
 .header {
   display: flex;
   align-items: center;
-  min-height: 50px;
+  justify-content: center;
+  min-height: 100px;
   padding: 0.5rem 1rem;
-  background-image: linear-gradient(to right, #8e43e7, #00aeff);
+  background-image: url(./images/field3.jpg);
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -19,27 +20,31 @@ em {
 }
 
 .header-title {
-  font-size: 1.2rem;
+  font-size: 4.5rem;
   font-weight: normal;
+  padding-right: 2%;
 }
 
-.header-title::after {
+/* .header-title::after {
   content: ' ▸ ';
   padding: 0 0.5rem;
-}
+} */
 
-.header-subtitle {
-  font-size: 1.2rem;
+.fb-clipart {
+  max-height: 80px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-panel {
   display: flex;
+  max-width: 80%;
 }
 
 .search-panel__filters {
@@ -61,4 +66,8 @@ em {
 
 .player-card {
   text-align: center;
+}
+
+.ais-Hits-item {
+  border: 2px solid black;
 }
