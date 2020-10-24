@@ -44,7 +44,9 @@ em {
 
 .search-panel {
   display: flex;
-  max-width: 80%;
+  max-width: 85%;
+  min-width: 85%;
+  margin-right: -5%;
 }
 
 .search-panel__filters {
@@ -52,6 +54,7 @@ em {
 }
 
 .search-panel__results {
+  text-align: center;
   flex: 3;
 }
 
@@ -70,4 +73,9 @@ em {
 
 .ais-Hits-item {
   border: 2px solid black;
+}
+
+.ais-Hits-list {
+  display: flex;
+  justify-content: center;
 }

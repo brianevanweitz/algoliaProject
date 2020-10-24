@@ -8,6 +8,7 @@ import {
   Highlight,
   ClearRefinements,
   RefinementList,
+  Configure,
 } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import './App.css';
@@ -33,6 +34,9 @@ class App extends Component {
               <ClearRefinements />
               <h2>Filter By Position</h2>
               <RefinementList attribute="position" />
+              <h2>Filter By Team</h2>
+              <RefinementList attribute="current_team" />
+              <Configure hitsPerPage={12} />
             </div>
             <div className="search-panel">
               <div className="search-panel__results">
