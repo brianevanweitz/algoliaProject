@@ -9,6 +9,7 @@ As part of my application for the solutions engineer position at Algolia, my goa
 I found a dataset of football players on [Kaggle](https://www.kaggle.com/zynicide/nfl-football-player-stats?select=profiles_1512362725.022629.json). In order to display the most relevant players (ideally the most successful and recent ones first), I set sorting preferences on the Algolia dashboard by Draft Round ascending, then by Birthdate descending, and finally by name to display alphabetically from there. I added filters for the players' position and current team on the front end to give users further specificity. There were a few issues:
 - Many entries were missing data I wanted to display, such as draft position and current team.
 - I wanted to display the age, but birth year was stored as part of a full birthdate string rather than an integer.
+
 I solved these by conditionally rendering the inconsistent data vs. placeholder strings (app.js lines 80-82) and writing a function to extract the birth year and calculate the player's age (app.js lines 63-67, 82).
 
 ### Observations
