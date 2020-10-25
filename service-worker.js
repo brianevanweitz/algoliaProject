@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/algoliaProject/precache-manifest.43183b0a31616fc3a5f1ddf238442e86.js"
+  "/algoliaProject/precache-manifest.8eecaabd68204b7a2c940e7cc2568631.js"
 );
 
 workbox.clientsClaim();
