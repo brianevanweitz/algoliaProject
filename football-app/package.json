@@ -2,11 +2,13 @@
   "name": "football-app",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://brianevanweitz.github.io/algoliaProject/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "algoliasearch": "3.35.1",

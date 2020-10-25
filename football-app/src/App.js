@@ -11,6 +11,7 @@ import {
   Configure,
 } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
+import football from './images/football.png'
 import './App.css';
 
 const searchClient = algoliasearch(
@@ -26,7 +27,7 @@ class App extends Component {
           <h1 className="header-title">
             <a href="/">NFL Player Database</a>
           </h1>
-          <img className='fb-clipart' src='https://lh3.googleusercontent.com/proxy/jFbNaySUwBkAFgcBPakoLhJ8K4tNkbKXcuvv1WuU4b_zLEoYBBjZnXFkq-mWDq9JTDGEVQkK3OPGTHI-8ZT1xXpS1HbzFGc' />
+          <img className='fb-clipart' src={football} />
         </header>
         <div className="container">
           <InstantSearch searchClient={searchClient} indexName="Football">
